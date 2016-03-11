@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+	<title>Martijn Nieuwenhuizen</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Portfoliowebsite Martijn Nieuwenhuizen"/>
+	<meta name="keywords" content=""/>
+
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300,300italic,400italic,500,600' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="../css/styles.min.css"/>
+
+</head>
+
+<body>
+<nav>
+	<ul>
+		<li>hello</li>
+	</ul>
+</nav>
+
+<main class="detail blog-detail" role="main"> 
+	
+	<header>
+		<h1>Eend</h1>
+
+		<section class="meta">
+			<p><span>Author:</span> Martijn Nieuwenhuizen</p> <p><span class="date">Date:</span> 05-02-2016</p>
+		</section>
+	</header>
+	
+	<p class="intro">
+		Eend, is the name of the compagny Marrije works for (translated to Englisch it means Duck. A tippicle Dutch bird in case you don’t know it). Eend is a compagny who specialises in UX ad UI. They don’t do the design and the only thing they diliver in HTML is a prototype. So why hire them?
+	</p>
+	<p>
+		Marrije made that clear in the workshop she gave us. In this workshop, we had a fieuw printed versions from the website of the HvA (Collage of Amsterdam). And our assignment was clear: cut this page into blocks that can stand on thair own and still have a meening. So we did.
+		The result was a bunch of little blocks from the website. But then it got difficult, and thairfor interesting. Because how far do you go. Is cutting out the blog fine, or do you need to sepparate the header from the intro and the body? So what does a piece needs to have to still have meening?		
+	</p>
+	<p>
+		Wel this made me curious. Because if I work on a website i alway’s make a wireframe of the page and name everything. But this goed way further. If you apply this technique at the beginning of your proces you create ‘basic’ elements. This in my eyes is the definition of Object Orientated CSS. I’ll explain this in an example:
+		I worked on a project for …. . We began this project with a style-guide. In this guide we try to create every element on the page. So what does a Header looks like, how does a list behave and wich buttons do we have? And whith the latest it went a bit wrong. Because we work with SASS, we had a style page?? named buttons.scss in the snippits map. In this document we declared the style of every button we needed on the page, it may have looked something like this:
+	</p>
+	<p class="code">
+		// Default button
+		button {
+			border: none;
+			background-color: #99ff00;
+			padding: .3em .7em;
+			border-radius: 5px;
+			color: white;
+		}
+		button:hover {
+			color: black;
+		}
+	</p>
+	<p class="code">
+		// Spesific buttons
+		[type=“submit”] {
+			background-color: green;
+		}
+		.disabled {
+			background-color: red;
+		}
+	</p>
+	<p>
+		So here comes the problem. Three months after the launge (livegang) I checked a little detail in the CSS and discovered some new files:
+
+		<ul>
+			<li>errorbutton.scss</li>
+			<li>red—light-button.scss</li>
+			<li>blog-button.scss</li>
+			<li>big-button.scss</li>
+			<li>small-button.scss</li>
+		</ul>
+		I think you catch my drift.
+	</p>
+
+	<h2>So why is this so bad.</h2>
+	<p>
+		If this contignues you wil have A LOT of new files, so your well thought of argitecture is screwed. That means that after three years, you will have 15 different buttons, 8 different news blocks with a different background and for that, 300 lines of useless striped thrue css.
+	</p>
+	<p>
+		This is where Eend comes in the picuture. They will analize your site for visual problems like this. But in my oppinion, the Front-enders are responsible for this fact. So, don’t create new files for every single thing you need to add for a client. First take a ook at the current structure and work with that!
+	</p>
+
+
+	<!-- <p class="note">
+		Note: If you want to see what i’m talking about, look at his webpage: http://drububu.com/
+	</p> -->
+	
+</main>
+
+	<footer>
+		<h2>Other blogs</h2>
+		<nav>
+			<ul>
+				<li><a href="">Drububu</a></li>
+				<li><a href="">Eend</a></li>
+				<li><a href="">Workflow</a></li>
+			</ul>
+		</nav>
+		
+	</footer>
+
+	<script src="../js/main.min.js"></script>
+
+</body>
+
+</html>
