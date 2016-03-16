@@ -1,0 +1,123 @@
+/*
+
+	General
+
+*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Helvetica", Sans-Serif;
+}
+header {
+	display: flex;
+	flex-flow: column wrap;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	background-color: #008080;
+	color: white;
+}
+header li {
+	font-size: 1.2em;
+}
+header p {
+	font-size: 1.4em;	
+}
+h1 {
+
+}
+h2 {
+
+}
+p {
+	font-size: 1em;
+}
+img {
+	width: 100%;
+	max-height: 5em;
+}
+
+p, h2, span {
+	padding: 0 .3em;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	padding: 1em 0;
+	background-color: #f2f2f2;
+}
+.container-inner {
+	background-color: #fff;
+}
+
+button {
+	border: none;
+	background-color: #008080;
+	color: white;
+	font-size: 1.2em;
+	padding: .3em .7em;
+	margin: 0 .5em;
+}
+.button-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 1em;
+}
+
+
+
+/*
+
+	Progressive Enhancement Flex Demo
+
+*/
+.container {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+.container-inner {
+	display: inline-block;
+	max-width: 10em;
+	max-height: 30em;
+	margin: .3em .7em;
+	text-align: left;
+}
+
+
+.flexbox-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+
+
+.flex-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.no-flex-center {
+	text-align: center;
+}
+
+
+/*
+
+	Progressive Enhancement Loop Demo
+
+*/
+.container-inner {
+	transition: 1s;
+	max-height: 30em;
+}
+.collapse {
+	overflow: hidden;
+	max-height: 0em;
+}
