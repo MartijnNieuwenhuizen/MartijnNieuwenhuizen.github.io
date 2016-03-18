@@ -1,0 +1,92 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Open Sans", "Helvetica", Sans-Serif;
+	line-height: 1.7;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5em 0;
+	background-color: #F8B000;
+	color: white;
+}
+h1 {
+	font-size: 2.5em;
+}
+button {
+	background-color: #00AAE6;
+	margin: 1em;
+	font-size: 1.2em;
+	color: white;
+	border: none;
+	padding: .7em 1.7em;
+	max-width: 20em;
+}
+button:hover,
+button:focus {
+	background-color: #3888C5;
+	cursor: pointer;
+	outline: none;
+}
+
+
+/*
+
+	Button Wrapper
+
+*/
+.button-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-start;
+
+	padding: 2em 0;
+	margin-top: 1em;
+}
+
+/*
+
+	Push Notification
+
+*/
+#push-notification {
+	position: absolute;
+	top: 20vh;
+	right: 50%;
+	transform: translateX(calc(50%));
+	box-shadow: 0 0 0 60vmax rgba(0,0,0, .5);
+
+	background-color: #F8B000;
+	padding: 1em;
+	border-radius: 5px;
+
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+#notification-content {
+	color: #fff;
+}
+
+.hide {
+	opacity: 0;
+	z-index: -10;
+}
+.show {
+	transition: .3s;
+	opacity: 1;
+	z-index: 1;
+}
+
+
+
+
+
+
