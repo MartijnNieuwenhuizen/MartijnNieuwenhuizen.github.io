@@ -76,6 +76,7 @@
 			_content.forEach(function(contentItem) {
 				var listItem = document.createElement('li');
 				listItem.innerHTML = contentItem;
+				listItem.classList.add('js-ondrop');
 
 				list.appendChild(listItem);
 
@@ -213,6 +214,8 @@
 		    newListItem.innerHTML = text;
 		    // add the new list item to the ul
 		    event.target.appendChild(newListItem);
+		    // add the animation class to the elements
+		    newListItem.classList.add('js-ondrop');
 
 		    if (event.preventDefault) {
 		  		event.preventDefault();
