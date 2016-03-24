@@ -1,0 +1,218 @@
+/*
+COLORS
+
+Ingredents
+#dddfd4
+#fae596
+
+List
+#3fb0ac
+#173e43
+
+*/
+
+
+/*
+
+IE =<8 FIXES
+
+*/
+header, section {
+	display: block;
+}
+
+/*
+
+DEFAULT
+
+*/
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Raleway", Sans-Serif;
+	line-height: 1.7;
+
+	color: #383838;
+}
+h1 {
+	margin: 0;
+	font-size: 1.8em;
+	padding: .7em 0;
+	text-align: center;
+}
+h2 {
+	font-size: 1.5em;
+	margin-left: .7em;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*
+
+HEADER
+
+*/
+header {
+	background-color: #fae596;
+}
+
+/*
+
+LAYOUT
+
+*/
+form, #shopping {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	margin: 0;
+}
+/*
+
+FORM
+
+*/
+form {
+	width: 100%;		
+	background-color: #dddfd4;
+}
+legend {
+	padding-top: 2em;
+    font-size: 1.5em;
+    color: inherit;
+}
+fieldset {
+	border: none;
+	margin-top: -3em;
+}
+input {
+	font-size: 1.3em;
+}
+/*label {
+	background-color: #fae596;
+}*/
+#other {
+	max-width: 10em;
+}
+
+/*
+	INGREDIENTS
+*/
+#bread input[type="checkbox"], #toppings input[type="checkbox"],
+#bread input[type="radio"], #toppings input[type="radio"] {
+	margin: 1em 1em 0 0.2em;
+}
+#bread label, #toppings label {
+	margin: 0;
+	padding: .3em 1em;
+}
+
+/*
+	OTHER
+*/
+#input-ingredient input, 
+#input-ingredient label,
+button {
+	display: block;
+	margin: .7em;
+}
+#input-ingredient label {
+	font-size: 1.5em;
+}
+button {
+	display: block;
+	font-size: 1em;
+	font-weight: bold;
+	border: none;
+	background-color: #3fb0ac;
+	color: white;
+	max-width: -webkit-max-content;
+	max-width: -moz-max-content;
+	max-width: max-content;
+	padding: .3em 1em;
+}
+
+/*
+
+SHOPPING LIST
+
+*/
+#shopping {
+	max-width: 30em;
+	margin-left: 3em;
+}
+.shopping-list {
+
+}
+li {
+	padding: .3em .7em;
+	margin: .3em 0;
+	background-color: #3fb0ac;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+	list-style-type: none;
+}
+
+
+/*
+
+JAVASCRIPT
+
+*/
+.hide-left {
+	padding-bottom: 2.5em;
+	position: absolute;
+	top: 10.5em;
+	background-color: #dddfd4;
+	-webkit-transition: .3s;
+	        transition: .3s;
+	-webkit-transform: translateX(-100%);
+	    -ms-transform: translateX(-100%);
+	        transform: translateX(-100%);
+}
+.show {
+	-webkit-transition: .3s;
+	        transition: .3s;
+	-webkit-transform: translateX(0%);
+	    -ms-transform: translateX(0%);
+	        transform: translateX(0%);	
+}
+.js-button {
+    clear: left;
+}
+.js-drop-area {
+	padding: 1em;
+	min-height: 7em;
+	background-color: #e7e7e7;
+	padding-bottom: 5em;
+}
+.js-input-hide {
+	display: none;
+}
+.js-highlight-label {
+	background-color: #fae596;
+	margin: .3em 0 !important;
+}
+
+@media(min-width: 820px) {
+	#bread input[type="checkbox"], #toppings input[type="checkbox"],
+	#bread input[type="radio"], #toppings input[type="radio"] {
+		margin: .6em 0px 0 0.5em;
+		float: left;
+	}
+	#bread label, #toppings label {
+		float: left;
+		clear: left;
+	}
+	form {
+		max-width: 18em;
+	}
+	.js-button {
+		float: left;
+	    clear: left;
+	}
+}
